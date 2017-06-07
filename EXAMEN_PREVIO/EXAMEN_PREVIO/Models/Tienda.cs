@@ -1,15 +1,17 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EXAMEN_PREVIO
+namespace EXAMEN_PREVIO.Models
 {
-    class Program
+    class Tienda
     {
-        static void Main(string[] args)
+        public Tienda(List<string> Dispositivo)
         {
+            
         }
     }
 }

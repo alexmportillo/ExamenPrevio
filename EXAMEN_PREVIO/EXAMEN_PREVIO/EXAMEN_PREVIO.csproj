@@ -45,14 +45,14 @@
   <ItemGroup>
     <Compile Include="Models\Dispositivo.cs" />
     <Compile Include="Interfaces\IReparable.cs" />
-    <Compile Include="Main\Main.cs" />
     <Compile Include="Models\Movil.cs" />
     <Compile Include="Models\PC.cs" />
     <Compile Include="Models\Portatil.cs" />
     <Compile Include="Models\Ram.cs" />
     <Compile Include="Models\SO.cs" />
     <Compile Include="Models\Tablet.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Main\Program.cs" />
+    <Compile Include="Models\Tienda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EXAMEN_PREVIO.Models
 {
-    public enum SO 
+    public enum SO
     {
         Android,
         IOS,

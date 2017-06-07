@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EXAMEN_PREVIO.Models
 {
-    class Tablet
+    class Tablet:Dispositivo
     {
+        public SO so { get; set; }
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace EXAMEN_PREVIO.Interfaces
 {
-    class IReparable
+    public interface IReparable
     {
-        private float Precio;
-        private float reparar;
+        float Precio { get; set; }
+        void Reparar (float precio);
     }
 }
