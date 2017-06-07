@@ -9,9 +9,19 @@ namespace EXAMEN_PREVIO.Models
 {
     class Tienda
     {
-        public Tienda(List<string> Dispositivo)
+        public IList<Dispositivo> Lista{ get; set; }
+      
+        public void añadir()
         {
-            
+
+        }
+        public void reparar()
+        {
+
+        }
+        public void entregar()
+        {
+
         }
     }
 }
