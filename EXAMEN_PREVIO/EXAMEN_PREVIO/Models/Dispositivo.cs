@@ -35,6 +35,16 @@ namespace EXAMEN_PREVIO.Models
         {
             throw new NotImplementedException();
         }
+
+        public static implicit operator Dispositivo(string Marca)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static implicit operator Dispositivo(int Modelo)
+        {
+            throw new NotImplementedException();
+        }
     }
     
 }

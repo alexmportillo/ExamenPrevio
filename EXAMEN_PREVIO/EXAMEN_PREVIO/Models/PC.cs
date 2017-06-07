@@ -1,4 +1,5 @@
 ﻿using System;
+using EXAMEN_PREVIO.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EXAMEN_PREVIO.Models
 {
-    class PC:Dispositivo
+    class PC:Dispositivo,IReparable
     {
         public PC(string fuentealimentacion,List<string>Piezas,Ram Ram)
         {
