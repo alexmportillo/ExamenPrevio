@@ -9,26 +9,32 @@ namespace EXAMEN_PREVIO.Models
 {
     public abstract class Dispositivo:IReparable
     {
-        private String Marca;
-        private String Modelo;
-        private String Pulgadas;
+        protected string Marca;
+        protected string Modelo;
+        protected int Pulgadas;
 
-        float IReparable.Precio
+        public abstract float Precio { get; set; }
+
+        public Dispositivo(string marca,string modelo,int pulgadas)
         {
-            get
+           Marca = marca;
+           Modelo = modelo;
+           Pulgadas = pulgadas;
+        }
+        //Getters y setters como en Java
+       
+        public void setPulgadas(int pulgadas)
+        {
+            if (pulgadas < 0)
             {
-                throw new NotImplementedException();
+                throw new Exception("Las pulgadas no puede ser menor de 0");
             }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
+            Pulgadas = pulgadas;
         }
 
         public override string  ToString() 
         {
-            return String.Format("{0} {1} {2} ", Marca, Modelo, Pulgadas);
+            return string.Format("{0} {1} {2} ", Marca, Modelo, Pulgadas);
         }
 
         void IReparable.Reparar(float precio)
@@ -36,7 +42,7 @@ namespace EXAMEN_PREVIO.Models
             throw new NotImplementedException();
         }
 
-        public static implicit operator Dispositivo(string Marca)
+             public static implicit operator Dispositivo(string Marca)
         {
             throw new NotImplementedException();
         }
@@ -45,6 +51,7 @@ namespace EXAMEN_PREVIO.Models
         {
             throw new NotImplementedException();
         }
+    }
     }
     
 }
