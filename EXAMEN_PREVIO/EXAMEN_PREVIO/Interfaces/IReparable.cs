@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EXAMEN_PREVIO.Models
+namespace EXAMEN_PREVIO.Interfaces
 {
     class IReparable
     {
+        private float Precio;
+        private float reparar;
     }
 }

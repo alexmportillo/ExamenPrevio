@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace EXAMEN_PREVIO.Models
 {
-    class Ram
+    public enum Ram
     {
+        GB1,
+        GB2,
+        GB4,
+        GB8,
+        GB16,
+        GB32
+
     }
 }
